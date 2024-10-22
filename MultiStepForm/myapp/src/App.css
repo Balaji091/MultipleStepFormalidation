@@ -1,0 +1,94 @@
+/* src/App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #f3f4f6, #e0e7ff);
+  margin: 0;
+  padding: 0;
+}
+h1{
+  margin-left: 40%;
+}
+
+.multi-step-form {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.multi-step-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #4a4a4a;
+}
+
+input {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.5);
+}
+
+button {
+  width: 80%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.error {
+  color: #dc2626;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+  .multi-step-form {
+      padding: 20px;
+      margin: 20px;
+  }
+
+  button {
+      padding: 10px;
+      font-size: 0.9rem;
+  }
+}
